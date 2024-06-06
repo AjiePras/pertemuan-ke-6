@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript di html</title>
+    <link rel="stylesheet" href="index6.css">
+</head>
+<body>
+
+<h1>IMPLEMENTASI JAVASRCIPT DI HTML</h1>
+<button onclick="showAlert()">Tampilkan Alert</button>
+<button onclick="showPrompt()">Tampilkan Prompt</button>
+<button onclick="showConfirm()">Tampilkan Confirm</button>
+
+<script>
+    function showAlert() {
+        alert("Ini adalah pesan alert!");
+    }
+
+    function showPrompt() {
+        var nama = prompt("Masukkan nama Anda:");
+        if (nama != null) {
+            alert("Halo, " + nama + "!");
+        }
+    }
+
+    function showConfirm() {
+        var result = confirm("Apakah Anda yakin?");
+        if (result) {
+            alert("Anda menekan OK.");
+        } else {
+            alert("Anda menekan Cancel.");
+        }
+    }
+</script>
+
+</body>
+</html>
